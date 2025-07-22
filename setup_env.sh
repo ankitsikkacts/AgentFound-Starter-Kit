@@ -24,15 +24,11 @@ sudo yum install -y mongodb-org
 sudo systemctl start mongod
 sudo systemctl enable mongod
 
-echo "Installing Python 3.9.22"
-
-sudo amazon-linux-extras enable python3.9
-sudo yum install -y python3.9
-
 # Create virtual environment using Python 3.9
+cudo chmod 777 AgentOps_src
 cd AgentOps_src
-python3.9 -m venv venv
-source venv/bin/activate
+python3.9 -m venv .venv
+source .venv/bin/activate
 
 echo "Installing Python Packages"
 python3.9 pip install --upgrade pip setuptools

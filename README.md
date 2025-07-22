@@ -16,7 +16,7 @@ cd AgentFound-Starter-Kit
 Run the EC2 creation script to set up your infrastructure:
 
 ```bash
-./Ec2_creation.sh
+./create_ec2_instance.sh
 ```
 
 ### Step 3: Configure Your Agents

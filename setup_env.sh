@@ -26,22 +26,13 @@ sudo systemctl enable mongod
 
 echo "Installing Python 3.9.22"
 
-# Install dependencies for building Python
-sudo yum groupinstall -y "Development Tools"
-sudo yum install -y gcc openssl-devel bzip2-devel libffi-devel wget make zlib-devel
-
-# Download and install Python 3.9.22
-cd /usr/src
-sudo wget https://www.python.org/ftp/python/3.9.22/Python-3.9.22.tgz
-sudo tar xzf Python-3.9.22.tgz
-cd Python-3.9.22
-sudo ./configure --enable-optimizations
-sudo make altinstall
+sudo amazon-linux-extras enable python3.9
+sudo yum install -y python3.9
 
 # Create virtual environment using Python 3.9
-cd ~/AgentOps_src/
+cd AgentOps_src
 python3.9 -m venv venv
-source venv/bin/activate
+sudo source venv/bin/activate
 
 echo "Installing Python Packages"
 pip install --upgrade pip setuptools

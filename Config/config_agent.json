@@ -1,5 +1,5 @@
 {
-  "aws_access_key_id": "AK******",
-  "aws_secret_access_key": "Md*****",
+  "aws_access_key_id": "AccessKeyId",
+  "aws_secret_access_key": "SecretAccessKey",
   "region_name": "us-east-1"
 }

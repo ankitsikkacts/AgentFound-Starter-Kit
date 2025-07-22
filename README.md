@@ -3,12 +3,12 @@
 git clone this repo in aws shell
 
 Run Ec2_creation.sh
+Create agents using sh script, note down the keys & Tokens
 
 Connect to EC2 using SSH command
 
 sudo yum install git -y
 
-Create agents using sh script
 
 Update the config files in config folder
 

@@ -8,7 +8,7 @@ Welcome to the AgentFoundry Starter Kit! This guide will help you quickly set up
 Clone this repository to your AWS Cloud Shell:
 
 ```bash
-git clone [https://github.com/ankitsikkacts/AgentFound-Starter-Kit.git]
+git clone https://github.com/ankitsikkacts/AgentFound-Starter-Kit.git
 cd AgentFound-Starter-Kit
 ```
 

@@ -67,7 +67,6 @@ Run the environment setup script:
 
 ```bash
 sh setup_env.sh
-Next run
 cd ..
 
 ```

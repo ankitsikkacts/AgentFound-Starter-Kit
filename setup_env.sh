@@ -28,10 +28,9 @@ sudo systemctl enable mongod
 echo "Installing Python Packages"
 
 sudo yum install python3-pip -y
-cd AgentOps_src/AgentOps_src
-
 python3 -m pip install --upgrade setuptools[core]
 
+cd AgentOps_src/
 python3 -m pip install --ignore-installed -r requirements.txt
 echo "Starting Backend & Frontend Servers"
 uvicorn fastapi_endpoint:app --host 0.0.0.0 --port 8000 & streamlit run streamlit_app_gpt.py --server.address=0.0.0.0 --server.port=8501 & streamlit run streamlit_app_user_Interaction.py --server.address=0.0.0.0 --server.port=8502 &

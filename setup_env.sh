@@ -1,6 +1,6 @@
 #!/bin/bash
 
-unzip AgentOps_src.zip
+sudo unzip AgentOps_src.zip
 
 echo "Copying Config Files"
 cp config/* AgentOps_src/

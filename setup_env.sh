@@ -3,7 +3,7 @@
 unzip AgentOps_src.zip
 
 echo "Copying Config Files"
-cp config/* AgentOps/
+cp config/* AgentOps_src/
 
 
 echo "Downloading & Installing MongoDB"

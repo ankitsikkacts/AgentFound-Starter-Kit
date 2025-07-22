@@ -9,7 +9,6 @@ Connect to EC2 using SSH command
 
 sudo yum install git -y
 
-
 Update the config files in config folder
 
 Run Setup_env.sh

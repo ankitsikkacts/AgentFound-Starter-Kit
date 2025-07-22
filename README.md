@@ -20,3 +20,6 @@ Dashboard <IP>:8501
 User Interface <IP>:8502
 
 Onboard the agents using Query Interface
+
+Cleanup 
+To delete the IAM users & tokens , Update the delete_iam_user.sh with the IAM user and run.

@@ -32,9 +32,7 @@ source .venv/bin/activate
 
 echo "Installing Python Packages"
 python3.9 -m pip install --upgrade pip setuptools
-python3.9 -m pip install --ignore-installed -r requirements.txt
+python3.9 -m pip install -r requirements.txt
 
 echo "Starting Backend & Frontend Servers"
-uvicorn fastapi_endpoint:app --host 0.0.0.0 --port 5000 &
-streamlit run streamlit_app_gpt.py --server.address=0.0.0.0 --server.port=8501 &
-streamlit run streamlit_app_user_Interaction.py --server.address=0.0.0.0 --server.port=8502 &
+uvicorn fastapi_endpoint:app --host 0.0.0.0 --port 5000 & streamlit run streamlit_app_gpt.py --server.address=0.0.0.0 --server.port=8501 & streamlit run streamlit_app_user_Interaction.py --server.address=0.0.0.0 --server.port=8502 &

@@ -30,4 +30,4 @@ python3 -m pip install --upgrade setuptools[core]
 
 python3 -m pip install --ignore-installed -r requirements.txt
 
-uvicorn fastapi_endpoint:app --host 0.0.0.0 --port 8000 & streamlit run streamlit_app_gpt.py & streamlit run streamlit_app_user_Interaction.py
+uvicorn fastapi_endpoint:app --host 0.0.0.0 --port 8000 & streamlit run streamlit_app_gpt.py --server.address=0.0.0.0 --server.port=8501 & streamlit run streamlit_app_user_Interaction.py --server.address=0.0.0.0 --server.port=8502 &

@@ -32,11 +32,11 @@ sudo yum install -y python3.9
 # Create virtual environment using Python 3.9
 cd AgentOps_src
 python3.9 -m venv venv
-sudo source venv/bin/activate
+source venv/bin/activate
 
 echo "Installing Python Packages"
-pip install --upgrade pip setuptools
-pip install --ignore-installed -r requirements.txt
+python3.9 pip install --upgrade pip setuptools
+python3.9 pip install --ignore-installed -r requirements.txt
 
 echo "Starting Backend & Frontend Servers"
 uvicorn fastapi_endpoint:app --host 0.0.0.0 --port 5000 &

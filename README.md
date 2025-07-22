@@ -9,7 +9,7 @@ Clone this repository to your AWS Cloud Shell:
 
 ```bash
 git clone https://github.com/yourusername/AgentFoundry-Starter-Kit.git
-cd AgentFoundry-Starter-Kit
+cd AgentFound-Starter-Kit
 ```
 
 ### Step 2: Create EC2 Infrastructure

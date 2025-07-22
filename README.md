@@ -1,6 +1,6 @@
 # AgentFound-Starter-Kit
 
-git clone this repo in EC2 instance
+git clone this repo in aws shell
 
 Run Ec2_creation.sh
 

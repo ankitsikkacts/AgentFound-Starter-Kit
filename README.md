@@ -6,6 +6,8 @@ Run Ec2_creation.sh
 
 Connect to EC2 using SSH command
 
+yum install git -y
+
 Create agents using sh script
 
 Update the config files in config folder

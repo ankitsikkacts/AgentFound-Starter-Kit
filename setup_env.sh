@@ -2,6 +2,10 @@
 
 unzip AgentOps_src.zip
 
+echo "Copying Config Files"
+cp config/* AgentOps/
+
+
 echo "Downloading & Installing MongoDB"
 
 echo "Setting up MongoDB Repository"
@@ -29,5 +33,5 @@ cd AgentOps_src/AgentOps_src
 python3 -m pip install --upgrade setuptools[core]
 
 python3 -m pip install --ignore-installed -r requirements.txt
-
+echo "Starting Backend & Frontend Servers"
 uvicorn fastapi_endpoint:app --host 0.0.0.0 --port 8000 & streamlit run streamlit_app_gpt.py --server.address=0.0.0.0 --server.port=8501 & streamlit run streamlit_app_user_Interaction.py --server.address=0.0.0.0 --server.port=8502 &

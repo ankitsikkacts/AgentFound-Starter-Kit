@@ -17,7 +17,6 @@ EOF
 sudo yum clean all
 sudo yum install -y mongodb-org
 
-
 sudo systemctl start mongod
 
 sudo systemctl enable mongod
@@ -25,7 +24,7 @@ sudo systemctl enable mongod
 echo "Installing Python Packages"
 
 sudo yum install python3-pip -y
-cd AgentOps_src
+cd AgentOps_src/AgentOps_src
 
 python3 -m pip install --upgrade setuptools[core]
 

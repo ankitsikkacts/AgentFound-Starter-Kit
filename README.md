@@ -1,25 +1,95 @@
-# AgentFoundry-Starter-Kit
+# AgentFoundry Starter Kit
 
-git clone this repo in aws shell
+Welcome to the AgentFoundry Starter Kit! This guide will help you quickly set up and deploy AgentFoundry on AWS. Follow these simple steps to get your agent environment up and running.
 
-Run Ec2_creation.sh
+## Quick Start Guide
 
-Add IAM User names in the  setup_agent.sh script to Create agents . note down the keys & Tokens
+### Step 1: Clone the Repository
+Clone this repository to your AWS Cloud Shell:
 
-Connect to EC2 using SSH command
+```bash
+git clone https://github.com/yourusername/AgentFoundry-Starter-Kit.git
+cd AgentFoundry-Starter-Kit
+```
 
+### Step 2: Create EC2 Infrastructure
+Run the EC2 creation script to set up your infrastructure:
+
+```bash
+./Ec2_creation.sh
+```
+
+### Step 3: Configure Your Agents
+Open the `setup_agent.sh` script and add your desired IAM user names. This script will create the necessary agents and generate authentication tokens.
+
+```bash
+nano setup_agent.sh
+# Add your IAM usernames where indicated
+./setup_agent.sh
+```
+
+> **Important:** Make sure to note down the generated access keys and tokens - you'll need these later!
+
+### Step 4: Connect to Your EC2 Instance
+Use SSH to connect to your newly created EC2 instance:
+
+```bash
+ssh -i your-key-pair.pem ec2-user@your-instance-public-ip
+```
+
+### Step 5: Install Git on EC2 (if not already installed)
+
+```bash
 sudo yum install git -y
+```
 
-Update the config files in config folder
+### Step 6: Update Configuration Files
+Navigate to the config folder and update the configuration files with your settings:
 
-Run Setup_env.sh
+```bash
+cd config
+# Edit the necessary configuration files
+nano config.json
+```
 
-Access the portal on the Public IPs of EC2.
+### Step 7: Setup the Environment
+Run the environment setup script:
 
-Dashboard <IP>:8501
-User Interface <IP>:8502
+```bash
+./setup_env.sh
+```
 
-Onboard the agents using Query Interface
+### Step 8: Access the AgentFoundry Portal
+Once setup is complete, you can access the AgentFoundry interfaces using your EC2 instance's public IP:
 
-Cleanup 
-To delete the IAM users & tokens , Update the delete_iam_user.sh with the IAM user and run.
+- **Dashboard:** `http://your-instance-public-ip:8501`
+- **User Interface:** `http://your-instance-public-ip:8502`
+
+### Step 9: Onboard Your Agents
+Use the Query Interface to onboard your agents. Follow the on-screen instructions to complete the process.
+
+## Cleaning Up Resources
+
+When you're done with your AgentFoundry environment, you can clean up the created IAM users and tokens:
+
+```bash
+# Edit the delete_iam_user.sh script with the IAM users you want to delete
+nano delete_iam_user.sh
+# Run the script
+./delete_iam_user.sh
+```
+
+## Troubleshooting
+
+If you encounter any issues during setup, check the following:
+- Ensure your AWS credentials have sufficient permissions
+- Verify that all configuration files contain the correct information
+- Check EC2 instance security groups allow traffic on ports 8501 and 8502
+
+## Need Help?
+
+If you need assistance, please open an issue in this repository or contact our support team.
+
+---
+
+Happy agent building with AgentFoundry!

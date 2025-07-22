@@ -25,7 +25,7 @@ Open the `setup_agent.sh` script and add your desired IAM user names. This scrip
 ```bash
 nano setup_agent.sh
 # Add your IAM usernames where indicated
-sh setup_agent.sh
+sh setup_agent.sh > agent.log
 ```
 
 > **Important:** Make sure to note down the generated access keys and tokens - you'll need these later!

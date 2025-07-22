@@ -16,7 +16,7 @@ cd AgentFound-Starter-Kit
 Run the EC2 creation script to set up your infrastructure:
 
 ```bash
-./create_ec2_instance.sh
+sh create_ec2_instance.sh
 ```
 
 ### Step 3: Configure Your Agents
@@ -66,7 +66,7 @@ nano config_server.json
 Run the environment setup script:
 
 ```bash
-./setup_env.sh
+sh setup_env.sh
 ```
 
 ### Step 9: Access the AgentFoundry Portal
@@ -86,7 +86,7 @@ When you're done with your AgentFoundry environment, you can clean up the create
 # Edit the delete_iam_user.sh script with the IAM users you want to delete
 nano delete_iam_user.sh
 # Run the script
-./delete_iam_user.sh
+sh delete_iam_user.sh
 ```
 
 ## Troubleshooting

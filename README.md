@@ -1,4 +1,4 @@
-# AgentFound-Starter-Kit
+# AgentFoundry-Starter-Kit
 
 git clone this repo in aws shell
 

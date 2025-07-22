@@ -5,7 +5,7 @@ KEY_NAME="DemoKeyPair"
 SECURITY_GROUP_NAME="DemoSecurityGroup"
 INSTANCE_NAME="DemoInstance"
 AMI_ID="ami-0150ccaf51ab55a51"  # Replace with a valid AMI ID for your region
-INSTANCE_TYPE="t2.micro"
+INSTANCE_TYPE="t2.large"
 REGION="us-east-1"
 
 # Create a key pair and save the private key

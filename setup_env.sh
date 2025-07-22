@@ -25,14 +25,14 @@ sudo systemctl start mongod
 sudo systemctl enable mongod
 
 # Create virtual environment using Python 3.9
-cudo chmod 777 AgentOps_src
+sudo chmod 777 AgentOps_src
 cd AgentOps_src
 python3.9 -m venv .venv
 source .venv/bin/activate
 
 echo "Installing Python Packages"
-python3.9 pip install --upgrade pip setuptools
-python3.9 pip install --ignore-installed -r requirements.txt
+python3.9 -m pip install --upgrade pip setuptools
+python3.9 -m pip install --ignore-installed -r requirements.txt
 
 echo "Starting Backend & Frontend Servers"
 uvicorn fastapi_endpoint:app --host 0.0.0.0 --port 5000 &

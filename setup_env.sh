@@ -32,8 +32,8 @@ python3 -m pip install --upgrade setuptools[core]
 
 cd AgentOps_src/
 ls -lrt
-cat Config/config_agent.json
-cat Config/config_server.json
+cat config_agent.json
+cat config_server.json
 python3 -m pip install --ignore-installed -r requirements.txt
 echo "Starting Backend & Frontend Servers"
 uvicorn fastapi_endpoint:app --host 0.0.0.0 --port 5000 & streamlit run streamlit_app_gpt.py --server.address=0.0.0.0 --server.port=8501 & streamlit run streamlit_app_user_Interaction.py --server.address=0.0.0.0 --server.port=8502 &

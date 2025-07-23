@@ -104,4 +104,4 @@ If you need assistance, please open an issue in this repository or contact our s
 
 ---
 
-Happy agent building with AgentFoundry!
+Happy agent monitoring with AgentFoundry Monitoring!

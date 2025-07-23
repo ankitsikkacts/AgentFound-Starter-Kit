@@ -11,7 +11,7 @@ aws iam put-user-policy \
     "Statement": [
       {
         "Effect": "Allow",
-        "Action": "cloudwatch:GetMetricData",
+        "Action": "*",
         "Resource": "*"
       }
     ]

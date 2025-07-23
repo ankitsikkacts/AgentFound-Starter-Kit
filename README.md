@@ -64,9 +64,10 @@ nano config_server.json
 
 ### Step 8: Setup the Environment
 Run the environment setup script:
-cd ..
+
 ```bash
-sh setup_env.sh
+cd ..
+sh setup_env.sh 
 
 ```
 

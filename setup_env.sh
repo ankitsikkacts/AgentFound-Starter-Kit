@@ -4,6 +4,7 @@
 sudo unzip AgentOps_src.zip
 
 echo "Copying Config Files"
+sudo cp Config/* AgentOps_src
 sudo cp Config/* AgentOps_src/pages
 
 echo "Downloading & Installing MongoDB"

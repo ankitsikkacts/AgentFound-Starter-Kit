@@ -1,4 +1,4 @@
-# AgentFoundry Starter Kit
+# AgentFoundry Monitoring Starter Kit
 
 Welcome to the AgentFoundry Starter Kit! This guide will help you quickly set up and deploy AgentFoundry on AWS. Follow these simple steps to get your agent environment up and running.
 

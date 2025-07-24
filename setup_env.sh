@@ -30,7 +30,8 @@ sudo chmod 777 AgentOps_src
 cd AgentOps_src
 python3.9 -m venv .venv
 source .venv/bin/activate
-
+pwd
+ls -lrt
 echo "Installing Python Packages"
 python3.9 -m pip install --upgrade pip setuptools
 python3.9 -m pip install -r requirements.txt

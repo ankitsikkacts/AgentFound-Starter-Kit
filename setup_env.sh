@@ -30,11 +30,12 @@ sudo chmod 777 AgentOps_src
 cd AgentOps_src
 python3.9 -m venv .venv
 source .venv/bin/activate
-pwd
-ls -lrt
+
 echo "Installing Python Packages"
 python3.9 -m pip install --upgrade pip setuptools
 python3.9 -m pip install -r requirements.txt
+
+python3.9 -m unittest test_database_connection.py
 
 echo "Starting Backend & Frontend Servers"
 uvicorn fastapi_endpoint:app --host 0.0.0.0 --port 5000 & streamlit run Streamlit_UI.py --server.address=0.0.0.0 --server.port=8501 &

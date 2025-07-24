@@ -32,7 +32,7 @@ aws ec2 authorize-security-group-ingress --group-id $SECURITY_GROUP_ID --protoco
 echo "HTTPS access enabled for security group"
 
 # Add custom ports for your services
-for PORT in 8000 8501 8502; do
+for PORT in 8000 8501; do
   aws ec2 authorize-security-group-ingress --group-id $SECURITY_GROUP_ID --protocol tcp --port $PORT --cidr 0.0.0.0/0 --region $REGION
   echo "Custom TCP port $PORT access enabled for security group"
 done

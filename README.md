@@ -75,7 +75,6 @@ sh setup_env.sh
 Once setup is complete, you can access the AgentFoundry interfaces using your EC2 instance's public IP:
 
 - **Dashboard:** `http://your-instance-public-ip:8501`
-- **User Interface:** `http://your-instance-public-ip:8502`
 
 ### Step 10: Onboard Your Agents
 Use the Query Interface to onboard your agents. Follow the on-screen instructions to complete the process.

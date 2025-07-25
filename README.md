@@ -103,4 +103,4 @@ If you need assistance, please open an issue in this repository or contact our s
 
 ---
 
-Happy agent monitoring with AgentFondry Monitoring!
+Happy agent monitoring with AgentFoundry Monitoring!

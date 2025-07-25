@@ -1,6 +1,6 @@
-# AgentFoundry Monitoring Starter Kit
+# Agent Foundry Monitoring Starter Kit
 
-Welcome to the AgentFoundry Starter Kit! This guide will help you quickly set up and deploy AgentFoundry on AWS. Follow these simple steps to get your agent environment up and running.
+Welcome to the Agent Foundry Starter Kit! This guide will help you quickly set up and deploy Agent Foundry on AWS. Follow these simple steps to get your agent environment up and running.
 
 ## Quick Start Guide
 
@@ -20,7 +20,7 @@ sh create_ec2_instance.sh
 ```
 
 ### Step 3: Configure Your Agents
-Open the `setup_agent.sh` script and add your desired IAM user names. This script will create the necessary agents and generate authentication tokens.
+Open the `setup_agent.sh` script and add your desired IAM usernames. This script will create the necessary agents and generate authentication tokens.
 
 ```bash
 nano setup_agent.sh
@@ -28,7 +28,7 @@ nano setup_agent.sh
 sh setup_agent.sh > agent.log
 ```
 
-> **Important:** Make sure to note down the generated access keys and tokens - you'll need these later!
+> **Important: ** Make sure to note down the generated access keys and tokens - you'll need these later!
 
 ### Step 4: Connect to Your EC2 Instance
 Use SSH to connect to your newly created EC2 instance:
@@ -71,17 +71,17 @@ sh setup_env.sh
 
 ```
 
-### Step 9: Access the AgentFoundry Portal
-Once setup is complete, you can access the AgentFoundry interfaces using your EC2 instance's public IP:
+### Step 9: Access the Agent Foundry Portal
+Once setup is complete, you can access the Agent Foundry interfaces using your EC2 instance's public IP:
 
-- **Dashboard:** `http://your-instance-public-ip:8501`
+- **Dashboard: ** `http://your-instance-public-ip:8501`
 
 ### Step 10: Onboard Your Agents
 Use the Query Interface to onboard your agents. Follow the on-screen instructions to complete the process.
 
 ## Cleaning Up Resources
 
-When you're done with your AgentFoundry environment, you can clean up the created IAM users and tokens:
+When you're done with your Agent Foundry environment, you can clean up the created IAM users and tokens:
 
 ```bash
 # Edit the delete_iam_user.sh script with the IAM users you want to delete
@@ -103,4 +103,4 @@ If you need assistance, please open an issue in this repository or contact our s
 
 ---
 
-Happy agent monitoring with AgentFoundry Monitoring!
+Happy agent monitoring with Agent Foundry Monitoring!
